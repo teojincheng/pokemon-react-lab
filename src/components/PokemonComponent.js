@@ -1,10 +1,14 @@
 import React from "react";
 
 function PokemonComponent(props) {
-  const { id, name, type, base } = props.pokemon;
+  const { name, type, base } = props.pokemon;
+  const index = props.index + 1;
   return (
-    <div>
-      <img src={process.env.PUBLIC_URL + "/pokemonImage/1.png"}></img>
+    <div className="showAsInline border">
+      <img
+        className="imageSize"
+        src={process.env.PUBLIC_URL + "/pokemonImage/" + index + ".png"}
+      ></img>
       <div>{name.english}</div>
       <div>
         <span>{type[0]}</span>

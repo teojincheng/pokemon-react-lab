@@ -1,2 +1,17 @@
 .App {
+  text-align: center;
+}
+
+.showAsInline {
+  display: inline-block;
+}
+
+.imageSize {
+  height: 125px;
+  width: 135px;
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
 }
