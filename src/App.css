@@ -15,3 +15,63 @@
   border-style: solid;
   border-width: 1px;
 }
+
+.greenBorder {
+  border-style: solid;
+  border-width: 1px;
+  background-color: green;
+}
+
+.purpleBorder {
+  border-style: solid;
+  border-width: 1px;
+  background-color: purple;
+}
+
+.plumBorder {
+  border-style: solid;
+  border-width: 1px;
+  background-color: plum;
+}
+
+.blueBorder {
+  border-style: solid;
+  border-width: 1px;
+  background-color: blue;
+}
+
+.lightGreenBorder {
+  border-style: solid;
+  border-width: 1px;
+  background-color: lightgreen;
+}
+
+.lightGreyBorder {
+  border-style: solid;
+  border-width: 1px;
+  background-color: lightgrey;
+}
+
+.yellowBorder {
+  border-style: solid;
+  border-width: 1px;
+  background-color: yellow;
+}
+
+.brownBorder {
+  border-style: solid;
+  border-width: 1px;
+  background-color: brown;
+}
+
+.lightPinkBorder {
+  border-style: solid;
+  border-width: 1px;
+  background-color: lightpink;
+}
+
+.redBorder {
+  border-style: solid;
+  border-width: 1px;
+  background-color: red;
+}
