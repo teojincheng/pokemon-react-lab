@@ -6,10 +6,19 @@ import PokemonComponent from "./components/PokemonComponent";
 
 const bulbasaur = pokemonData[0];
 
+function mapListToCard() {
+  let result = pokemonData.map(singlePokemonData => {
+    return <PokemonComponent pokemon={singlePokemonData} />;
+  });
+
+  return result;
+}
+
 function App() {
   return (
     <div className="App">
       <PokemonComponent pokemon={bulbasaur} />
+      {mapListToCard()}
     </div>
   );
 }
