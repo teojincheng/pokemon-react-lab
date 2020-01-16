@@ -2,21 +2,14 @@ import React from "react";
 import "./App.css";
 import pokemonData from "./pokemon/pokemon";
 
-const bulbasaur = pokemonData[0];
+import PokemonComponent from "./components/PokemonComponent";
 
-function PokemonCard({ pokemon }) {
-  const { id, name, type, base } = pokemon;
-  return (
-    <div>
-      <div>{name.english}</div>
-    </div>
-  );
-}
+const bulbasaur = pokemonData[0];
 
 function App() {
   return (
     <div className="App">
-      <PokemonCard pokemon={bulbasaur} />
+      <PokemonComponent pokemon={bulbasaur} />
     </div>
   );
 }
