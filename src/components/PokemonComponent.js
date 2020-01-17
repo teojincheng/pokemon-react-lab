@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./PokemonCard.css";
+import { PokemonType } from "./PokemonType";
 
 function determineColor(pType) {
   const types = [
@@ -32,20 +34,21 @@ function determineColor(pType) {
 }
 
 function PokemonComponent(props) {
-  const { name, type, base } = props.pokemon;
+  const { id, name, type, base } = props.pokemon;
   const index = props.index + 1;
   return (
-    <div className="showAsInline border">
+    <div className="pokemon-card">
       <img
-        className="imageSize"
-        src={process.env.PUBLIC_URL + "/pokemonImage/" + index + ".png"}
+        className="pokemon-card__image"
+        src={process.env.PUBLIC_URL + "/pokemonImage/" + id + ".png"}
       ></img>
-      <div>{name.english}</div>
+      <div className="pokemon-name">{name.english}</div>
       <div>
-        <span className={determineColor(String(type[0]))}>{type[0]}</span>
-        <span> </span>
-        <span className={determineColor(String(type[1]))}>{type[1]}</span>
+        {type.map(t => (
+          <PokemonType type={t}></PokemonType>
+        ))}
       </div>
+
       <div>HP: {base.HP}</div>
       <div>Attack: {base.Attack}</div>
       <div>Defence: {base.Defence}</div>

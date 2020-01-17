@@ -1,19 +1,17 @@
-.App {
-  text-align: center;
+.grass {
+  background-color: green;
 }
 
-.showAsInline {
-  display: inline-block;
+.fire {
+  background-color: orange;
 }
 
-.imageSize {
-  height: 125px;
-  width: 135px;
+.water {
+  background-color: blue;
 }
 
-.border {
-  border-style: solid;
-  border-width: 1px;
+.default {
+  background-color: grey;
 }
 
 .greenBorder {
@@ -74,10 +72,4 @@
   border-style: solid;
   border-width: 1px;
   background-color: red;
-}
-
-.displayGallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
