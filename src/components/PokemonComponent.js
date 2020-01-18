@@ -35,7 +35,8 @@ function determineColor(pType) {
 
 function PokemonComponent(props) {
   const { id, name, type, base } = props.pokemon;
-  const index = props.index + 1;
+  //const index = props.index + 1;
+
   return (
     <div className="pokemon-card">
       <img
@@ -48,13 +49,13 @@ function PokemonComponent(props) {
           <PokemonType type={t}></PokemonType>
         ))}
       </div>
-
-      <div>HP: {base.HP}</div>
-      <div>Attack: {base.Attack}</div>
-      <div>Defence: {base.Defence}</div>
-      <div>SpAttack: {base.SpAttack}</div>
-      <div>SpDefence: {base.SpDefence}</div>
-      <div>Speed: {base.Speed}</div>
+      <div>
+        {Object.entries(base).map(([key, value]) => (
+          <div>
+            {key}: {value}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
