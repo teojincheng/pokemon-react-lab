@@ -14,66 +14,43 @@
   background-color: grey;
 }
 
-.greenBorder {
-  border-style: solid;
-  border-width: 1px;
-  background-color: green;
+.purple {
+  background-color: #ac59ac;
 }
 
-.purpleBorder {
-  border-style: solid;
-  border-width: 1px;
-  background-color: purple;
-}
-
-.plumBorder {
-  border-style: solid;
-  border-width: 1px;
+.plum {
   background-color: plum;
 }
 
-.blueBorder {
-  border-style: solid;
-  border-width: 1px;
-  background-color: blue;
-}
-
-.lightGreenBorder {
-  border-style: solid;
-  border-width: 1px;
+.light-green {
   background-color: lightgreen;
 }
 
-.lightGreyBorder {
-  border-style: solid;
-  border-width: 1px;
+.light-grey {
   background-color: lightgrey;
 }
 
-.yellowBorder {
-  border-style: solid;
-  border-width: 1px;
+.yellow {
   background-color: yellow;
 }
 
-.brownBorder {
-  border-style: solid;
-  border-width: 1px;
+.brown {
   background-color: brown;
 }
 
-.lightPinkBorder {
-  border-style: solid;
-  border-width: 1px;
+.light-pink {
   background-color: lightpink;
 }
 
-.redBorder {
-  border-style: solid;
-  border-width: 1px;
-  background-color: red;
+.margin-between {
+  margin-right: 0.2em;
 }
 
-.margin-between {
-  margin-right: 2em;
+.pokemon-type {
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.pokemon-type + .pokemon-type {
+  margin-left: 0.4em;
 }
