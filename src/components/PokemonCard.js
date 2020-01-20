@@ -11,6 +11,7 @@ function PokemonCard(props) {
       <img
         className="pokemon-card__image"
         src={process.env.PUBLIC_URL + "/pokemonImage/" + id + ".png"}
+        alt={name}
       ></img>
       <div className="pokemon-name">{name.english}</div>
       <div>
