@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import PokemonGallery from "./components/PokemonGallery";
+import Parent from "./components/Parent";
+//import PokemonGallery from "./components/PokemonGallery";
 
 function App() {
-  //return <div className="App">{mapListToCardA()}</div>;
   return (
     <div className="App">
-      <PokemonGallery></PokemonGallery>
+      <Parent />
     </div>
   );
 }
