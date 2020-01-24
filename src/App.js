@@ -18,6 +18,7 @@ function App() {
           <Route path={Routes.about} component={About} />
           <Route path={Routes.notFound} component={NotFound} />
           <Route path={Routes.pokemonId} component={PokemonDetail} />
+          <Route exact from="/" component={About} />
           <Redirect to="/NotFound"></Redirect>
         </Switch>
       </BrowserRouter>
